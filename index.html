@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phone Book</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta content="Ross Eroshenkov" name="author" />
+  </head>
+  <body>
+    <div id="page">
+      <h1>Phone Book</h1>
+      <div class="content">
+        <section class="insert">
+          <h1>Insert / Update</h1>
+          <div class="inputSection">
+            <label for="last_name">Last name: </label>
+            <input id="last_name" />
+          </div>
+          <div class="inputSection">
+            <label for="first_name">First name: </label>
+            <input id="first_name" class="shorter" />
+          </div>
+          <div class="inputSection">
+            <label for="phone">Phone: </label>
+            <input id="phone" />
+          </div>
+          <div class="inputSection">
+            <label for="birthYear">Birth year: </label>
+            <input id="birthYear" class="shorter" type="number" />
+          </div>
+          <button onclick="save()">Save</button>
+          <button onclick="clearInput()">Cancel</button>
+          <button onclick="standart()">Start data</button>
+        </section>
+        <section class="friends">
+          <h1>All friends</h1>
+          <div class="contacts"></div>
+          <p>Average age: <span id="average"></span></p>
+          <p>Number of friends: <span id="friendCounter"></span></p>
+        </section>
+        <section class="oneFriend">
+          <h1>One friend</h1>
+          <p id="indexOfFriend" class="hide"></p>
+          <p id="names"></p>
+          <p>Phone: <span id="phoneFriend"></span></p>
+          <p>Birth year: <span id="birthYearFriend"></span></p>
+          <p>Age: <span id="AgeFriend"></span></p>
+          <button onclick="remove()">Remove</button>
+          <button onclick="edit()">Edit</button>
+        </section>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

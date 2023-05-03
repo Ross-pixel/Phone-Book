@@ -1,0 +1,77 @@
+body {
+  font-family: tahoma;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: lighter;
+  color: rgb(3, 3, 141);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.insert {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 25%;
+  justify-content: space-evenly;
+  border-top: 1px darkblue dashed;
+}
+
+.friends {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-top: 1px darkblue dashed;
+}
+
+.oneFriend {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-top: 1px darkblue dashed;
+}
+
+button {
+  width: 100px;
+}
+
+.shorter {
+  width: 100px;
+}
+
+.inputSection input {
+  margin-left: auto;
+}
+
+.inputSection label {
+  display: inline-block;
+  width: 6em;
+}
+
+.friends p {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.oneFriend p {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.oneFriend button {
+  margin-top: 8px;
+}
+
+.contact {
+  border-bottom: 1px darkblue dashed;
+}
+
+.hide {
+  display: none;
+}
